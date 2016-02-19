@@ -4,6 +4,10 @@
 #include <fstream>
 #include <stdexcept>
 
+#include <mxnet/c_api.h>
+#include <mxnet/c_predict_api.h>
+
+
 namespace mx {
 
 std::string readBinaryFile(const std::string &filename) {
