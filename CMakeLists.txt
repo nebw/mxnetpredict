@@ -63,7 +63,7 @@ include_directories(
     SYSTEM ${CUDA_INCLUDE_DIRS}
 )
 
-add_library(mxnetpredictor
+add_library(mxnetpredictor STATIC
 	"source/MXNetPredictor.cpp"
 	"include/mxnetpredictor/MXNetPredictor.h"
 )
