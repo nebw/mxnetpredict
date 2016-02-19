@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8.7 FATAL_ERROR)
-project(mxnet_predict)
+set(CPM_MODULE_NAME "mxnetpredict")
+project("${CPM_MODULE_NAME}")
 
 #------------------------------------------------------------------------------
 # Required CPM Setup - no need to modify - See: https://github.com/iauns/cpm
@@ -47,7 +48,7 @@ else()
         SOURCE_DIR "${MXNET_PATH}")
 endif()
 
-CPM_Finish()
+CPM_InitModule("${CPM_MODULE_NAME}")
 
 find_package(OpenCV REQUIRED)
 find_package(CUDA REQUIRED)
