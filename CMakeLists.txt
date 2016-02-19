@@ -75,6 +75,8 @@ target_link_libraries(mxnetpredictor
     ${CUDA_LIBRARIES}
 )
 
+CPM_ExportAdditionalIncludeDir("${PROJECT_SOURCE_DIR}/include")
+
 set(test-libs mxnetpredictor)
 
 enable_testing(true)

@@ -4,10 +4,9 @@
 
 #include <opencv2/core.hpp>
 
-#include <mxnet/c_api.h>
-#include <mxnet/c_predict_api.h>
-
 namespace mx {
+typedef unsigned int mx_uint;
+typedef void *PredictorHandle;
 
 enum MXNET_DEVICE_TYPE {
     CPU = 1,
