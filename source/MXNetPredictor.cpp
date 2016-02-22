@@ -62,7 +62,7 @@ MXNetPredictor::~MXNetPredictor()
     MXPredFree(m_predictor);
 }
 
-float MXNetPredictor::predict(const cv::Mat2f &input)
+float MXNetPredictor::predict(const cv::Mat &input)
 {
     handleMXNetReturnCode(MXPredSetInput(
                               m_predictor, "data", reinterpret_cast<float *>(input.data),

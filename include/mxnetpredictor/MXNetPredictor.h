@@ -35,9 +35,9 @@ public:
         , m_predictor(loadPredictor(symbol, params, width, height, deviceType))
     {}
 
-    ~MXNetPredictor();
+    virtual ~MXNetPredictor();
 
-    float predict(cv::Mat2f const& input);
+    float predict(const cv::Mat &input);
 
 private:
     static const size_t m_channels = 1;
