@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include <opencv2/core.hpp>
+#include <opencv2/core/core.hpp>
 
 namespace mx {
 typedef unsigned int mx_uint;

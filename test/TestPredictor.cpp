@@ -3,7 +3,7 @@
 #include <cmath>
 #include <string>
 
-#include <opencv2/core.hpp>
+#include <opencv2/core/core.hpp>
 
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
